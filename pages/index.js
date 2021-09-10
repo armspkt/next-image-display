@@ -10,111 +10,12 @@ const Index = () => (
   <div className={styles.container}>
     <ViewSource pathname="pages/index.js" />
     <div className={styles.card}>
-      <h1>Image Component with Next.js</h1>
-      <p>
-        This page demonstrates the usage of the{" "}
-        <a href="https://nextjs.org/docs/api-reference/next/image">
-          next/image
-        </a>{" "}
-        component with live examples.
-      </p>
-      <p>
-        This component is designed to{" "}
-        <a href="https://nextjs.org/docs/basic-features/image-optimization">
-          automatically optimize
-        </a>{" "}
-        images on-demand as the browser requests them.
-      </p>
-      <hr className={styles.hr} />
-      <h2 id="layout">Layout</h2>
-      <p>
-        The <Code>layout</Code> property tells the image to respond differently
-        depending on the device size or the container size.
-      </p>
-      <p>
-        Select a layout below and try resizing the window or rotating your
-        device to see how the image reacts.
-      </p>
-      <ul>
-        <li>
-          <Link href="/layout-intrinsic">
-            <a>layout="intrinsic"</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/layout-responsive">
-            <a>layout="responsive"</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/layout-fixed">
-            <a>layout="fixed"</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/layout-fill">
-            <a>layout="fill"</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/background">
-            <a>background demo</a>
-          </Link>
-        </li>
-      </ul>
-      <hr className={styles.hr} />
-      <h2 id="placeholder">Placeholder</h2>
-      <p>
-        The <Code>placeholder</Code> property tells the image what to do while
-        loading.
-      </p>
-      <p>
-        You can optionally enable a blur-up placeholder while the high
-        resolution image loads.
-      </p>
-      <p>
-        Try it out below (you may need to disable cache in dev tools to see the
-        effect if you already visited):
-      </p>
-      <ul>
-        <li>
-          <Link href="/placeholder">
-            <a>placeholder="blur"</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/shimmer">
-            <a>placeholder="blur" with custom blurDataURL</a>
-          </Link>
-        </li>
-      </ul>
-      <hr className={styles.hr} />
-      <h2 id="internal">Internal Image</h2>
-      <p>
-        The following is an example of a reference to an internal image from the{" "}
-        <Code>public</Code> directory.
-      </p>
-      <p>
-        This image is intentionally large so you have to scroll down to the next
-        image.
-      </p>
-      <Image alt="Vercel logo" src={vercel} width={1000} height={1000} />
-      <hr className={styles.hr} />
-      <h2 id="external">External Image</h2>
-      <p>
-        The following is an example of a reference to an external image at{" "}
-        <Code>assets.vercel.com</Code>.
-      </p>
-      <p>
-        External domains must be configured in <Code>next.config.js</Code> using
-        the <Code>domains</Code> property.
-      </p>
       <Image
         priority={true}
         alt="Description"
         width={290}
         height={145}
-        src={`https://s3-ap-southeast-1.amazonaws.com/public-bitkub/web_banner/20210910121629Alonzo Upgrade_Web ปิด.png`}
+        src={`https://s3-ap-southeast-1.amazonaws.com/public-bitkub/web_banner/20210706150017Merchandise for Web-07.png`}
       />
       <hr className={styles.hr} />
       <h2 id="more">Learn More</h2>
